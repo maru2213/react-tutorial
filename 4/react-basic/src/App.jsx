@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { ColoredMessage } from "./components/ColoredMessage"
 
 export const App = () => {
@@ -6,6 +6,13 @@ export const App = () => {
   const onClickButton = () => {
     setNum((prev) => prev + 1)
   }
+
+  useEffect(() => {
+    console.log("最初のレンダリング")
+  }, [])
+  useEffect(() => {
+    console.log("numが変更されました")
+  }, [num])
 
   return (
     <>
