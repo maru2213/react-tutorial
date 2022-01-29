@@ -1,0 +1,14 @@
+{
+  "name": "REACT-TUTORIAL",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [8080],
+  "extensions": [
+    "dsznajder.es7-react-js-snippets",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "vscode-icons-team.vscode-icons"
+  ]
+}

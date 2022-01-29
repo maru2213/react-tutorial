@@ -1,0 +1,11 @@
+version: "3"
+services:
+  devcontainer:
+    build: ./
+    volumes:
+      - ../:/workspace:cached
+      - /workspace/node_modules
+    environment:
+      - TZ=Asia/Tokyo
+      - CHOKIDAR_USEPOLLING=true
+    tty: true
