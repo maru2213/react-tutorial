@@ -1,4 +1,5 @@
 import { CssModules } from "./components/CssModules"
+import { StyledComponents } from "./components/StyledComponents";
 import { StyledJsx } from "./components/StyledJsx";
 
 export const App = () => {
@@ -6,6 +7,7 @@ export const App = () => {
     <>
       <CssModules />
       <StyledJsx />
+      <StyledComponents />
     </>
   );
 }
