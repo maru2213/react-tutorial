@@ -1,6 +1,7 @@
-import { ChangeEvent, useState } from "react"
+import { ChangeEvent, FC, useState } from "react"
+import { MemoList } from "./MemoList"
 
-export const App = () => {
+export const App: FC = () => {
   const [text, setText] = useState<string>("")
   const [memos, setMemos] = useState<string[]>([])
 
@@ -26,14 +27,7 @@ export const App = () => {
       <h1>簡単メモアプリ</h1>
       <input type="text" value={text} onChange={onChangeText} />
       <button onClick={onClickAddButton}>追加</button>
-      <ul>
-        {memos.map((memo, index) => (
-          <li>
-            <p>{memo}</p>
-            <button onClick={() => onClickDeleteButton(index)}>削除</button>
-          </li>
-        ))}
-      </ul>
+      <MemoList memos={memos} onClickDeleteButton={onClickDeleteButton}/>
     </>
   )
 }
