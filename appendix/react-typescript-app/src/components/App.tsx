@@ -1,25 +1,22 @@
 import { ChangeEvent, FC, useState } from "react"
+import { useMemoList } from "../hooks/useMemoList"
 import { MemoList } from "./MemoList"
 
 export const App: FC = () => {
   const [text, setText] = useState<string>("")
-  const [memos, setMemos] = useState<string[]>([])
+  const {memos, addTodo, deleteTodo} = useMemoList()
 
   const onChangeText = (e: ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value)
   }
 
   const onClickAddButton = () => {
-    const newMemos = [...memos]
-    newMemos.push(text)
-    setMemos(newMemos)
+    addTodo(text)
     setText("")
   }
 
   const onClickDeleteButton = (index: number) => {
-    const newMemos = [...memos]
-    newMemos.splice(index, 1)
-    setMemos(newMemos)
+    deleteTodo(index)
   }
 
   return (
