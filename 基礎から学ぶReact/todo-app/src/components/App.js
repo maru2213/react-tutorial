@@ -25,10 +25,10 @@ export const App = () => {
       <TodoAdd inputEl={inputEl} handleOnClickedAddTodo={handleOnClickedAddTodo} />
 
       <h2>未完了TODOリスト</h2>
-      <TodoList todoList={inCompletedList} />
+      <TodoList todoList={inCompletedList} toggleTodoListItemStatus={toggleTodoListItemStatus} deleteTodoListItem={deleteTodoListItem} />
 
       <h2>完了TODOリスト</h2>
-      <TodoList todoList={completedList} />
+      <TodoList todoList={completedList} toggleTodoListItemStatus={toggleTodoListItemStatus} deleteTodoListItem={deleteTodoListItem} />
     </>
   );
 }

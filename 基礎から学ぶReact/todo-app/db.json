@@ -1,48 +1,18 @@
 {
   "todos": [
     {
-      "id": 1,
+      "id": "01FW3DP8V2QB96WZP7V81MC969",
       "content": "Create React app をインストールする",
       "done": true
     },
     {
-      "id": 2,
+      "id": "01FW3DPG0887KMZ4V8W1NS66EF",
       "content": "JSON Server仮のAPIを作成する",
       "done": false
     },
     {
-      "id": 3,
+      "id": "01FW3DPM8SSEX69HMWCNYCGXTT",
       "content": "Chakra UIをインストールする",
-      "done": false
-    },
-    {
-      "id": "01FW3CV1G8M0YSYJ1FGA47WJFD",
-      "content": "asdf",
-      "done": false
-    },
-    {
-      "id": "01FW3CV4K1J727DAC3HFKK60J7",
-      "content": "ffff",
-      "done": false
-    },
-    {
-      "id": "01FW3CWS728YQT20DVWZDH9961",
-      "content": "asd",
-      "done": false
-    },
-    {
-      "id": "01FW3CWTX5E7D04JEMTVXDTM92",
-      "content": "ff",
-      "done": false
-    },
-    {
-      "id": "01FW3D1AM48SC3DJ653ZW6ASGG",
-      "content": "aweffff",
-      "done": false
-    },
-    {
-      "id": "01FW3DBDZFGNHWW099EB9DTZA0",
-      "content": "f",
       "done": false
     }
   ]
