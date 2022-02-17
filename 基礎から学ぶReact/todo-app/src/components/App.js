@@ -8,7 +8,9 @@ export const App = () => {
 
   const inputEl = useRef(null)
   const handleOnClickedAddTodo = () => {
-    addTodoListItem(inputEl.current.value)
+    const content = inputEl.current.value
+    if (content === "") return
+    addTodoListItem(content)
     inputEl.current.value = ""
   }
 
