@@ -8,12 +8,12 @@
     {
       "id": "01FW3DPG0887KMZ4V8W1NS66EF",
       "content": "JSON Server仮のAPIを作成する",
-      "done": false
+      "done": true
     },
     {
       "id": "01FW3DPM8SSEX69HMWCNYCGXTT",
       "content": "Chakra UIをインストールする",
-      "done": false
+      "done": true
     }
   ]
 }
